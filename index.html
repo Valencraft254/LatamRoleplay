@@ -17,7 +17,7 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', Arial, sans-serif;
-    background: linear-gradient(180deg, #050505, #000);
+    background: radial-gradient(circle at top, #0b0b1a, #000);
     color: white;
 }
 
@@ -114,7 +114,7 @@ h1 {
 
 .button:hover {
     transform: scale(1.08);
-    box-shadow: 0 0 45px rgba(37,99,235,1);
+    box-shadow: 0 0 20px #00ff00, 0 0 50px #00ff00;
 }
 
 /* FOOTER */
@@ -138,6 +138,12 @@ footer {
     padding:20px;
     text-align:center;
     width:180px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.staff-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 25px #00ff00, 0 0 50px rgba(0,255,0,0.4);
 }
 
 .staff-photo {
@@ -154,13 +160,23 @@ footer {
     margin-bottom:5px;
 }
 
+/* RGB ANIMADO EN ROLES */
+@keyframes rgbGlow {
+    0% { box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00; }
+    25% { box-shadow: 0 0 15px #00ff80, 0 0 30px #00ff80; }
+    50% { box-shadow: 0 0 20px #00ff40, 0 0 40px #00ff40; }
+    75% { box-shadow: 0 0 15px #00ff80, 0 0 30px #00ff80; }
+    100% { box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00; }
+}
+
 .staff-role {
-    color:#00ff00;
-    font-weight:bold;
-    background:rgba(0,255,0,0.1);
-    padding:3px 8px;
-    border-radius:6px;
-    display:inline-block;
+    font-weight: bold;
+    color: #00ff00;
+    padding: 3px 8px;
+    border-radius: 6px;
+    display: inline-block;
+    background: rgba(0,255,0,0.1);
+    animation: rgbGlow 2s infinite alternate;
 }
 </style>
 </head>
@@ -203,22 +219,22 @@ footer {
         <h2>Fundadores</h2>
         <div class="staff-container">
             <div class="staff-card">
-                <img src="https://placekitten.com/100/100" alt="itsnova91" class="staff-photo">
+                <img src="URL_DE_FOTO_ITSNOVA91" alt="itsnova91" class="staff-photo">
                 <div class="staff-name">itsnova91</div>
                 <div class="staff-role">Fundador</div>
             </div>
             <div class="staff-card">
-                <img src="https://placekitten.com/101/101" alt="luisito.v.17_01107" class="staff-photo">
+                <img src="URL_DE_FOTO_LUISITO" alt="luisito.v.17_01107" class="staff-photo">
                 <div class="staff-name">luisito.v.17_01107</div>
                 <div class="staff-role">Fundador</div>
             </div>
             <div class="staff-card">
-                <img src="https://placekitten.com/102/102" alt="valencraf" class="staff-photo">
+                <img src="URL_DE_FOTO_VALENCRAF" alt="valencraf" class="staff-photo">
                 <div class="staff-name">valencraf</div>
                 <div class="staff-role">Fundador</div>
             </div>
             <div class="staff-card">
-                <img src="https://placekitten.com/103/103" alt="david_roblox0363_90312" class="staff-photo">
+                <img src="URL_DE_FOTO_DAVID" alt="david_roblox0363_90312" class="staff-photo">
                 <div class="staff-name">david_roblox0363_90312</div>
                 <div class="staff-role">Fundador</div>
             </div>
@@ -232,4 +248,4 @@ footer {
 </div>
 
 </body>
-      </html>
+</html>
