@@ -8,7 +8,7 @@
     body {
         margin: 0;
         font-family: 'Segoe UI', Arial, sans-serif;
-        background: #000000; /* Fondo negro */
+        background: #0b0b1a;
         color: #fff;
     }
 
@@ -36,24 +36,15 @@
         margin-bottom: 30px;
     }
 
-    /* Rango Fundador Galaxy */
+    /* Rango Fundador */
     .rango {
         display: inline-block;
+        background: linear-gradient(90deg, #f39c12, #e74c3c, #9b59b6);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         font-size: 2rem;
         font-weight: bold;
         margin-bottom: 40px;
-        background: linear-gradient(45deg, #ff00ff, #00ffff, #ff9900, #ff00ff);
-        background-size: 400% 400%;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        animation: galaxy 8s ease infinite;
-        text-shadow: 0 0 5px #fff, 0 0 10px #fff;
-    }
-
-    @keyframes galaxy {
-        0% { background-position: 0% 50%; }
-        50% { background-position: 100% 50%; }
-        100% { background-position: 0% 50%; }
     }
 
     /* Sección de fundadores */
@@ -65,7 +56,7 @@
     }
 
     .fundador-card {
-        background: #111111; /* Negro profundo */
+        background: #11112a;
         border: 1px solid rgba(255,255,255,0.1);
         border-radius: 10px;
         width: 200px;
@@ -76,7 +67,7 @@
 
     .fundador-card:hover {
         transform: translateY(-5px);
-        box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+        box-shadow: 0 0 15px rgba(255,255,255,0.2);
     }
 
     .fundador-photo {
@@ -95,8 +86,7 @@
 
     .fundador-role {
         font-size: 0.9rem;
-        color: #00ffff;
-        font-weight: bold;
+        color: #aaa;
     }
 
 </style>
@@ -112,7 +102,7 @@
         Bienvenido a <strong>LATAM RolePlay</strong>. Aquí podrás disfrutar de una experiencia única de roleplay donde puedes crear tu historia, interactuar con otros jugadores y participar en eventos dentro del servidor. Para empezar, únete al servidor, elige tu rol y sigue las reglas para vivir la mejor experiencia RP.
     </div>
 
-    <!-- Rango Fundador Galaxy -->
+    <!-- Rango Fundador -->
     <div class="rango">Fundador</div>
 
     <!-- Fundadores -->
